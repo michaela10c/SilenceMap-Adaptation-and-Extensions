@@ -1,5 +1,5 @@
 # SilenceMap-Adaptation-and-Extensions
-This project replicates and extends the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0) for EEG-based brain-computer interface (BCI) applications. The repository focuses on EEG preprocessing, SSVEP analysis, source localization, and Center of Mass (COM) calculations, while integrating novel techniques to enhance neural decoding accuracy.
+This project replicates and extends the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0) for EEG-based brain-computer interface (BCI) applications. The repository focuses on EEG preprocessing, SSVEP analysis, source localization, Center of Mass (COM) calculations, and advanced clustering techniques, while integrating novel techniques to enhance neural decoding accuracy.
 
 ## Key Features
 
@@ -15,18 +15,19 @@ This project replicates and extends the [SilenceMap framework](https://github.co
 4. **Center of Mass (COM) Calculations:**
   - Interactive calculation and visualization of COM for lesion regions.
   - Comparison between EEG-derived COM and MRI-based ground truth.
-5. **Interactive Tools:**
-  - Sliders for threshold adjustment and slice selection to dynamically visualize and analyze data.
-  - Real-time overlay of lesion masks on MRI slices.
-6. **Novel Extensions:**
-  - Exploration of advanced neural decoding methods, including WAVEFRONT and CSD-STGAT.
-  - Testing novel models and paradigms to improve classification performance.
-7. **Convex Spectral Clustering (CSpeC):**
+5. **Convex Spectral Clustering (CSpeC):**
    - Implements advanced spectral clustering techniques to group spatially contiguous regions of interest.
    - Provides detailed cluster visualizations overlaid on MRI slices.
    - Evaluates clustering quality using metrics such as Silhouette Score, distances to COM, and mean intensities.
+6. **Interactive Tools:**
+  - Sliders for threshold adjustment and slice selection to dynamically visualize and analyze data.
+  - Real-time overlay of lesion masks on MRI slices.
+7. **Novel Extensions:**
+  - Exploration of advanced neural decoding methods, including WAVEFRONT and CSD-STGAT.
+  - Testing novel models and paradigms to improve classification performance.
 
 ## Improvements from Original SilenceMap Framework
+- **CSpeC Clustering**: Added clustering techniques to group lesion regions and evaluate spatial contiguity.
 - **Interactive Visualizations**: Added interactive sliders for thresholding and slice selection to streamline data exploration.
 - **COM Accuracy**: Enhanced COM calculations with visual overlays and export options.
 - **Documentation and Modularization**: Organized notebook into clear sections for preprocessing, analysis, and visualization, improving readability and reproducibility.
@@ -117,7 +118,7 @@ datasets/
   ```
   jupyter notebook
   ```
-3. Run the `Part1-SilenceMap_Replication.ipynb` Notebook. Follow the step-by-step instructions in the notebook to preprocess EEG data, compute COMs, and visualize the results.
+3. Run the `Part1-SilenceMap_Replication.ipynb` Notebook. Follow the step-by-step instructions in the notebook to preprocess EEG data, compute COMs, compute clusters, and visualize the results.
 4. View the generated results (from the notebook above) in the `results/` directory.
 
 ## Notebooks
@@ -130,14 +131,14 @@ datasets/
 
 The `results/` directory contains:
 - Lesion masks generated from thresholding.
-- COM calculations and their corresponding results stored in `com_results.txt`.
+- COM calculations stored in com_results.txt.
 - Source estimates from EEG data stored in `.fif` format.
-- Visualizations of lesion masks and MRI data slices.
-- Clustering visualizations stored as PNG files in `results/cspec_clusters.png`.
+- Clustering visualizations saved as PNG files.
+- Cluster labels saved as results/cluster_labels.npy.
 - Silhouette Score and COM distances stored in `results/com_results.txt`.
 - Cluster labels saved as `results/cluster_labels.npy`.
-- Mean intensities and distances to COM detailed in text and CSV formats.
+- Silhouette Scores, COM distances, and mean intensities stored in text and CSV formats.
 
 ## Contributions and Acknowledgments
 
-This project builds upon the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0), which is described in the paper [*Neural Silences can be Localized Rapidly Using Noninvasive Scalp EEG*](https://www.nature.com/articles/s42003-021-01768-0), incorporating feedback from the original authors (Chamanzar et al.) and leveraging advanced tools for EEG-based BCI research. I would like to thank Alireza Chamanzar (first author of the paper) and his team at Precision Neuroscopics Inc. for their invaluable feedback on this project. Contributions are welcome! Please submit pull requests or open issues for discussion.
+This project builds upon the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0), which is described in the paper [*Neural Silences can be Localized Rapidly Using Noninvasive Scalp EEG*](https://www.nature.com/articles/s42003-021-01768-0), incorporating feedback from the original authors (Chamanzar et al.) and leveraging advanced tools for EEG-based BCI research. Special thanks to Alireza Chamanzar and his team for their guidance. Contributions are welcome via pull requests or issues.
