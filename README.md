@@ -141,4 +141,4 @@ The `results/` directory contains:
 
 ## Contributions and Acknowledgments
 
-This project builds upon the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0), which is described in the paper [*Neural Silences can be Localized Rapidly Using Noninvasive Scalp EEG*](https://www.nature.com/articles/s42003-021-01768-0), incorporating feedback from the original authors (Chamanzar et al.) and leveraging advanced tools for EEG-based BCI research. Special thanks to Alireza Chamanzar and his team for their guidance. Contributions are welcome via pull requests or issues.
+This project builds upon the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0), which is described in the paper [*Neural Silences can be Localized Rapidly Using Noninvasive Scalp EEG*](https://www.nature.com/articles/s42003-021-01768-0). It integrates feedback from the original authors and incorporates advanced clustering methods and visualization techniques for EEG-based BCI research. Special thanks to Alireza Chamanzar and his team for their guidance. Contributions are welcome via pull requests or issues.
