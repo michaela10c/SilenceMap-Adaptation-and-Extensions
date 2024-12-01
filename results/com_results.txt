@@ -33,3 +33,7 @@ Center of Mass for 4Hz (Left): (np.int64(13180), 0, np.float64(0.742504767490186
 Center of Mass for 4Hz (Right): (np.int64(15111), 1, np.float64(0.742504767490186))
 Center of Mass for 6Hz (Left): (np.int64(20617), 0, np.float64(0.7223668427268242))
 Center of Mass for 6Hz (Right): (np.int64(13330), 1, np.float64(0.7223668427268242))
+Center of Mass for 4Hz (Left): (np.int64(13180), 0, np.float64(0.742504767490186))
+Center of Mass for 4Hz (Right): (np.int64(15111), 1, np.float64(0.742504767490186))
+Center of Mass for 6Hz (Left): (np.int64(20617), 0, np.float64(0.7223668427268242))
+Center of Mass for 6Hz (Right): (np.int64(13330), 1, np.float64(0.7223668427268242))
