@@ -97,6 +97,7 @@ datasets/
         recon-all -s <subject_name> -i /path/to/input_mri.nii.gz -all
         ```
       - This will process the MRI data and generate the necessary outputs in the `FREESURFER_HOME/subjects/<subject_name>/` directory.
+      - Repeat for all MRI files. 
    4) Coregister EEG and MRI Data:
       - Use the `mne coreg` GUI to coregister the EEG electrode positions with the MRI:
         ```
@@ -115,12 +116,20 @@ datasets/
 3. Run the `Part1-SilenceMap_Replication.ipynb` Notebook. Follow the step-by-step instructions in the notebook to preprocess EEG data, compute COMs, and visualize the results.
 4. View the generated results (from the notebook above) in the `results/` directory.
 
-
 ## Notebooks
 
 1. `Part1-SilenceMap_Replication.ipynb`:
   - Replicates key findings from the SilenceMap framework.
   - Includes COM calculations, interactive thresholding, and lesion mask analysis.
+
+## Results
+
+The `results/` directory contains:
+- Lesion masks generated from thresholding.
+- COM calculations and their corresponding results stored in `com_results.txt`.
+- Source estimates from EEG data stored in `.fif` format.
+- Visualizations of lesion masks and MRI data slices.
+
 
 ## Contributions and Acknowledgments
 
