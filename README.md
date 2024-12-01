@@ -83,7 +83,7 @@ datasets/
 3. Freesurfer Installation and Setup
    This project uses Freesurfer for MRI preprocessing and coregistration. Follow these steps to install and configure Freesurfer:
    1) Install Freesurfer:
-      - Download and install Freesurfer from [https://surfer.nmr.mgh.harvard.edu/].
+      - Download and install Freesurfer from https://surfer.nmr.mgh.harvard.edu/.
       - Follow the installation guide for your operating system.
    2) Set Environment Variables:
       -  Add the following to your `.bashrc` or `.zshrc`:
@@ -96,7 +96,7 @@ datasets/
         ```
         recon-all -s <subject_name> -i /path/to/input_mri.nii.gz -all
         ```
-      - This will process the MRI data and generate the necessary outputs in the `FREESURFER_HOME/subjects/subject_name/` directory.
+      - This will process the MRI data and generate the necessary outputs in the `FREESURFER_HOME/subjects/<subject_name>/` directory.
    4) Coregister EEG and MRI Data:
       - Use the `mne coreg` GUI to coregister the EEG electrode positions with the MRI:
         ```
