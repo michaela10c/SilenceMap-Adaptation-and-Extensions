@@ -1,5 +1,5 @@
 # SilenceMap-Adaptation-and-Extensions
-SilenceMap-Adaptation-and-Extensions replicates and extends the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0) for EEG-based BCI (Brain-Computer Interface) applications. The repository focuses on EEG preprocessing, SSVEP analysis, source localization, and Center of Mass (COM) calculations, while integrating novel techniques to enhance neural decoding accuracy.
+This project replicates and extends the [SilenceMap framework](https://github.com/Chamanzar/SilenceMap/tree/v1.0) for EEG-based BCI (Brain-Computer Interface) applications. The repository focuses on EEG preprocessing, SSVEP analysis, source localization, and Center of Mass (COM) calculations, while integrating novel techniques to enhance neural decoding accuracy.
 
 ## Key Features
 
