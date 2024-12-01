@@ -21,6 +21,10 @@ This project replicates and extends the [SilenceMap framework](https://github.co
 6. **Novel Extensions:**
   - Exploration of advanced neural decoding methods, including WAVEFRONT and CSD-STGAT.
   - Testing novel models and paradigms to improve classification performance.
+7. **Convex Spectral Clustering (CSpeC):**
+   - Implements advanced spectral clustering techniques to group spatially contiguous regions of interest.
+   - Provides detailed cluster visualizations overlaid on MRI slices.
+   - Evaluates clustering quality using metrics such as Silhouette Score, distances to COM, and mean intensities.
 
 ## Improvements from Original SilenceMap Framework
 - **Interactive Visualizations**: Added interactive sliders for thresholding and slice selection to streamline data exploration.
@@ -129,7 +133,10 @@ The `results/` directory contains:
 - COM calculations and their corresponding results stored in `com_results.txt`.
 - Source estimates from EEG data stored in `.fif` format.
 - Visualizations of lesion masks and MRI data slices.
-
+- Clustering visualizations stored as PNG files in `results/cspec_clusters.png`.
+- Silhouette Score and COM distances stored in `results/com_results.txt`.
+- Cluster labels saved as `results/cluster_labels.npy`.
+- Mean intensities and distances to COM detailed in text and CSV formats.
 
 ## Contributions and Acknowledgments
 
