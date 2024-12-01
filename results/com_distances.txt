@@ -1,0 +1,4 @@
+Distance between Ground Truth COM and 4Hz (Left) COM: 13055.62 mm
+Distance between Ground Truth COM and 4Hz (Right) COM: 14986.48 mm
+Distance between Ground Truth COM and 6Hz (Left) COM: 20492.25 mm
+Distance between Ground Truth COM and 6Hz (Right) COM: 13205.60 mm
