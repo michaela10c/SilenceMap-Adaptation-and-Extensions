@@ -16,9 +16,9 @@ This project replicates and extends the [SilenceMap framework](https://github.co
   - Interactive calculation and visualization of COM for lesion regions.
   - Comparison between EEG-derived COM and MRI-based ground truth.
 5. **Convex Spectral Clustering (CSpeC):**
-   - Implements advanced spectral clustering techniques to group spatially contiguous regions of interest.
-   - Provides detailed cluster visualizations overlaid on MRI slices.
-   - Evaluates clustering quality using metrics such as Silhouette Score, distances to COM, and mean intensities.
+  - Implements advanced spectral clustering techniques to group spatially contiguous regions of interest.
+  - Provides detailed cluster visualizations overlaid on MRI slices.
+  - Evaluates clustering quality using metrics such as Silhouette Score, distances to COM, and mean intensities.
 6. **Interactive Tools:**
   - Sliders for threshold adjustment and slice selection to dynamically visualize and analyze data.
   - Real-time overlay of lesion masks on MRI slices.
