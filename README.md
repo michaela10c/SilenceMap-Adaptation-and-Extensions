@@ -123,9 +123,11 @@ datasets/
 
 ## Notebooks
 
-1. `Part1-SilenceMap_Replication.ipynb`:
-  - Replicates key findings from the SilenceMap framework.
+1. `Part0-MNE_Demo.ipynb`:
+  - Uses the forward model and a standard Minimum Norm Estimation (MNE) approach
   - Includes COM calculations, interactive thresholding, and lesion mask analysis.
+2. `Part1-SilenceMap_Replication.ipynb`:
+  - Replicates the SilenceMap algorithm and framework.
 
 ## Results
 
